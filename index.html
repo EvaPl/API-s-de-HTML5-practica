@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API's de HTML5</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/58f580dc60.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main_div" class="content_wrapper">
+        <h1 class="select_title">Seleccione su archivo</h1>
+        <label for="file"></label>
+        <input type="file" class="select_video" id="file" name="file" accept="video/*">
+        <output id="video_output"></output>
+        <div id="controls_div" class="controls">
+            <button class="buttons" id="play" style="visibility: hidden;" title="Reproducir" aria-label="Reproducir">
+            <i class="fa-solid fa-play fa-1g" role="button" aria-label="Reproducir"></i>
+            </button>
+            <button class="buttons" id="pause" style="visibility: hidden;" title="Pausa" aria-label="Pausa">
+            <i class="fa-solid fa-pause fa-1g" role="button" aria-label="Pausa"></i>
+            </button>
+            <button class="buttons" id="up" style="visibility: hidden;" title="Subir volumen" aria-label="Subir volumen">
+            <i class="fa-solid fa-volume-high fa-1g" role="button" aria-label="Subir volumen"></i>
+            </button>
+            <button class="buttons" id="down" style="visibility: hidden;" title="Bajar volumen" aria-label="Bajar volumen">
+            <i class="fa-solid fa-volume-low fa-1g" role="button" aria-label="Bajar volumen"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
